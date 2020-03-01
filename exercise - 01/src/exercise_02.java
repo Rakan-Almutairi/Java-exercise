@@ -6,7 +6,10 @@ public class exercise_02 {
         System.out.println("Please enter you the Year:");
         int  x,y;
         x = readUserInPut.nextInt();
-        isLeapYear(x);
+        if(isLeapYear(x)){
+            System.out.println("This Year "+x+" is leap Year");
+        }else System.out.println("This Year "+x+" is not leap Year");
+
     }
     public static boolean isLeapYear(int year){
         if(!(year >=1 && year <=9999)){
